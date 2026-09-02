@@ -146,3 +146,33 @@ A change is done when all are true:
 2. Typecheck, tests, and build pass
 3. Contracts are synced across db/shared/server/ui
 4. Docs updated when behavior or commands change
+
+<!-- BEGIN:fleet-os-bootloader -->
+
+## Fleet OS / AI SDLC rules
+
+This repo participates in matter's Fleet OS.
+
+Before nontrivial work:
+
+1. Treat GitHub remote as source of truth for committed state, while preserving dirty local work as possible in-flight work from another window.
+2. Run Project Boot: identify repo path, branch, local HEAD, remote HEAD, sync state, dirty files, open PRs, relevant docs read, contradictions, blockers, and proposed next step.
+3. Read central reusable methods only when needed:
+   - `/Users/matter/Documents/GitHub/agent-frameworks/AGENTS.md`
+   - `/Users/matter/Documents/GitHub/agent-frameworks/CLAUDE.md`
+   - `/Users/matter/Documents/GitHub/agent-frameworks/ops/fleet-os/README.md`
+   - `/Users/matter/Documents/GitHub/agent-frameworks/ops/fleet-os/skills/project-boot/skill.md`
+   - `/Users/matter/Documents/GitHub/agent-frameworks/ops/fleet-os/skills/ai-sdlc-artifact-chain/skill.md`
+4. For meaningful features, risky edits, multi-agent work, or work that may cross windows, use the artifact chain:
+   - `intent/intent.md`
+   - `spec/spec.md`
+   - `plan/plan.md`
+   - build log
+   - review
+   - release gate
+   Templates live in `/Users/matter/Documents/GitHub/agent-frameworks/ops/fleet-os/templates/`.
+5. Use Firecrawl/Apify only for scoped public-source extraction with citations. Use Composio only for authenticated app actions with explicit approval before external side effects.
+6. Approval ladder is per step: build is not commit, commit is not push, push is not PR, PR is not merge, merge is not deploy.
+7. Before parking or closing work, write a durable handoff that states what is committed, pushed, local-only, blocked, or unsafe to close.
+
+<!-- END:fleet-os-bootloader -->
