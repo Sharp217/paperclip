@@ -161,7 +161,10 @@ Before nontrivial work:
    - `/Users/matter/Documents/GitHub/agent-frameworks/AGENTS.md`
    - `/Users/matter/Documents/GitHub/agent-frameworks/CLAUDE.md`
    - `/Users/matter/Documents/GitHub/agent-frameworks/ops/fleet-os/README.md`
+   - `/Users/matter/Documents/GitHub/agent-frameworks/ops/fleet-os/tools/registry.md`
+   - `/Users/matter/Documents/GitHub/agent-frameworks/ops/fleet-os/routing/skill-router.md`
    - `/Users/matter/Documents/GitHub/agent-frameworks/ops/fleet-os/skills/project-boot/skill.md`
+   - `/Users/matter/Documents/GitHub/agent-frameworks/ops/fleet-os/skills/skill-router/skill.md`
    - `/Users/matter/Documents/GitHub/agent-frameworks/ops/fleet-os/skills/ai-sdlc-artifact-chain/skill.md`
 4. For meaningful features, risky edits, multi-agent work, or work that may cross windows, use the artifact chain:
    - `intent/intent.md`
